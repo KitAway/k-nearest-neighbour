@@ -4,7 +4,7 @@ class Point:
         self.x = x
         self.y = y
 
-    def distance(self, p: Point):
+    def distance(self, p):
         return math.sqrt( (self.x - p.x) **2 + (self.y - p.y)**2)
 
     def __repr__(self):
