@@ -20,8 +20,8 @@ def kNN(point, points: list, k: int):
 
 def main(n, k):
 
-    n_points = [Point(i, i**1.4) for i in range(n)]
-    point = Point(2, 8)
+    n_points = [Point(rd.random(), rd.random()) for i in range(n)]
+    point = Point(0.5, 1)
     k_points = kNN(point, n_points, k)
     print("k nearest neighbours of %s are:"%point)
     for p in k_points:
